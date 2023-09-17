@@ -20,7 +20,8 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "files": [
-    "./dist/index.js"
+    "./dist/index.js",
+    "./dist/index.d.ts"
   ],
   "author": "John Ko",
   "license": "ISC",
