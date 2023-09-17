@@ -1,6 +1,6 @@
 {
   "name": "@john-ko/configurator",
-  "version": "0.0.0-rc.2",
+  "version": "0.0.0-rc.3",
   "description": "",
   "type": "module",
   "publishConfig": {
