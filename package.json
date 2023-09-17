@@ -1,0 +1,41 @@
+{
+  "name": "@john-ko/configurator",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "configuration",
+    "config",
+    "ezmode",
+    "esm"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "del ./dist & tsc",
+    "release": "dotenv release-it",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "files": [
+    "./dist/index.js"
+  ],
+  "author": "John Ko",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/lodash-es": "^4.17.9",
+    "auto-changelog": "^2.4.0",
+    "del": "^7.1.0",
+    "del-cli": "^5.1.0",
+    "dotenv-cli": "^7.3.0",
+    "jest": "^29.7.0",
+    "release-it": "^16.1.5",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}
