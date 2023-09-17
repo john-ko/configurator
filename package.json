@@ -13,6 +13,7 @@
     "esm"
   ],
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "del ./dist & tsc",
     "release": "dotenv release-it",
