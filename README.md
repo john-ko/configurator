@@ -1,7 +1,56 @@
 # configurator
+easy optional configuration that overlays optional propers over a base or default config
+
+## behavior
+```js
+import createConfigurator from '@john-ko/configurator'
+const config = {
+  nestedOption: {
+    somekeys: 'apple',
+    nestedOptionAgain: {
+      somekeys: 'banana',
+      nestedOption: {
+        somekeyA: 'a',
+        somekeyB: 'b'
+      }
+    }
+  }
+}
+const { defineConfig } = createConfigurations(config)
+
+// you can export it out
+// export { defineConfig }
+
+// or
+const cfg = defineConfig({
+  nestedOption: {
+    nestedOptionAgain: {
+      nestedOption: {
+        somekeyA: 'AAAAA'
+      }
+    }
+  }
+})
+
+//outputs
+console.log(JSON.string(cfg))
+// {
+//   "nestedOption": {
+//     "somekeys": "apple",
+//     "nestedOptionAgain": {
+//       "somekeys": "banana",
+//       "nestedOption": {
+//         "somekeyA": "AAAAA",
+//         "somekeyB": "b"
+//       }
+//     }
+//   }
+// }
+```
 
 ## usage
 
+### example
 ```ts
 // config.ts
 import createConfigurator from '@john-ko/configurator'

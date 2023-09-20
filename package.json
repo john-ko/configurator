@@ -24,6 +24,11 @@
     "./dist/index.d.ts"
   ],
   "author": "John Ko",
+  "homepage": "https://github.com/john-ko/configurator/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:john-ko/configurator.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.5.4",
