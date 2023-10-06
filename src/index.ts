@@ -26,3 +26,4 @@ export default function createConfigurations<T>(defaultConfig: T) {
     }
   }
 }
+
